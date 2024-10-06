@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juris Vesting Dashboard Alpha</title>
+    <link href="css/main.css" rel="stylesheet"/>
+	<link href="css/main-ext.css" rel="stylesheet"/>
+	<script type="text/javascript" src="js/vesting.js"></script>
+</head>
+<body>
+    <header>
+        <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
+        <div id="coinmarketcap-widget-marquee" coins="825,5426,4172,20314,1839,12220,7129,3794" currency="USD" theme="light" transparent="false" show-symbol-logo="true"></div>
+    </header>
+
+    <!-- Sidebar / Navbar -->
+    <div class="sidebar" style="background-color: #333; color: white;">
+        <img src="img/juris-logo-button.png" style="width:100px;height:100px;padding-left:70px;"/>
+        <hr>
+        <a href="index.html">Juris Vesting</a>
+        <a href="https://discord.gg/h36UgdEEED">Discord</a>
+        <hr>
+        <div class="info">
+            <p>Version A.11.1</p>
+        </div>
+    </div>
+
+    <!-- Main content area -->
+    <div class="main-content">
+        <!-- Centered input box -->
+        <input type="text" class="input-box" placeholder="Search Terra Classic / Terravelloper Address" onkeydown="checkEnterKey(event)">
+        
+		<h2>Vester Information</h2>
+        <!-- Container for table and iframe -->
+        <div class="content-container">
+            <!-- Table to display results -->
+			<table class="result-table" id="resultTable">
+                <tbody>
+                    <!-- Rows will be added here dynamically -->
+                </tbody>
+            </table>
+			
+			<!-- Container for button -->
+			<div class="buttonContainer" id="buttonContainer"></div>
+            
+            <!-- Iframe for DEXTools Trading Chart -->
+            <iframe class="iframe-right"
+                title="DEXTools Trading Chart"
+                src="https://www.dextools.io/widget-chart/en/solana/pe-light/8m2ZR6Fmf2AJrMGsqyhwQnas3PxkTTCefft57qmjJ5Jr?theme=light&chartType=2&chartResolution=30&drawingToolbars=false" style="width:700px;height:400px;"></iframe>
+        </div>
+		<br/>
+		<br/>
+		<h5 style="padding-left:800px">Note: a RAKOFF:LUNC feed is currently unable to be obtained. This will be changed once one is secured</h5>
+    </div>
+</body>
+</html>
