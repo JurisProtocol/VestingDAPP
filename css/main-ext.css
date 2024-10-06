@@ -1,0 +1,66 @@
+/* Styling for the input box */
+.input-box {
+	position: absolute;
+	top: 15%;
+	left: 57%;
+	transform: translate(-50%, -50%);
+	width: 75%;
+	height: 70px; /* Set a specific height */
+	background-color: rgba(255, 255, 255, 0.4); /* Semi-transparent background */
+	font-size: 25px;
+	text-align: center; /* Horizontally center the text */
+	line-height: 100px; /* Vertically center the text by matching it to the height */
+	padding: 0;
+	border-radius: 10px; /* Rounded corners */
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Light shadow */
+	border: none; /* Remove border */
+	outline: none; /* Remove focus outline */
+	box-sizing: border-box;
+}
+
+.input-box::placeholder {
+	color: rgba(0, 0, 0, 0.5); /* Placeholder text color */
+}
+
+/* Styling for the table */
+.result-table {
+	width: 22%;
+	border-collapse: collapse;
+	background-color: #333; /* Match the sidebar color */
+	color: white; /* White text */
+}
+
+.result-table th, .result-table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+.result-table th {
+	background-color: #444; /* Slightly darker for header */
+	text-align: left;
+}
+/* Styling for the content container */
+.content-container {
+	display: flex;
+	align-items: flex-start; /* Align items at the top */
+	justify-content: flex-end; /* Align items to the right */
+	padding-left: 800px;
+	gap: 175px; /* Space between the table and iframe */
+}
+
+/* Styling for the iframe */
+.iframe-right {
+	width: 700px;
+	height: 400px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: add shadow for better visual */
+}
+
+.main-content {
+	margin-left: -600px; /* Adjust to ensure it doesn't cover the sidebar */
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh; /* Full viewport height */
+}
